@@ -1,11 +1,12 @@
 public class BiodataSaya {
     public static void main(String[] args) {
 
-        //Menampilkan biodata mahasiswa
-        System.out.println("Nama: Azza Latiza Akbar Putri");
-        System.out.println("NIM: 10043");
+        //Menampilkan nama dan NIM pada baris yang sama
+        System.out.print("Nama: Azza Latiza Akbar Putri - ");
+        System.out.print("NIM: 10043");
 
-        //Menampilkan Program studi
-        System.out.println("Program Studi: Teknik Informatika");
+        //Pindah ke baris berikutnya untuk program studi
+        System.out.println();
+        System.out.println("Teknik Informatika");
     }
 }
