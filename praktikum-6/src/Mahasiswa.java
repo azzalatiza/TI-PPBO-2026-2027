@@ -11,8 +11,8 @@ public class Mahasiswa {
     }
 
     public Mahasiswa(String namaAwal, String nimAwal, double ipkAwal) {
-        nama = namaAwal;
-        nim = nimAwal;
-        ipk = ipkAwal;
+        this.nama = nama; // this.nama = atribut, nama = parameter
+        this.nim = nim;
+        this.ipk = ipk;
     }
 }
