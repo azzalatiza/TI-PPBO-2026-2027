@@ -1,4 +1,3 @@
-
 public class Buku {
     private String judul;
     private String pengarang;
@@ -10,6 +9,7 @@ public class Buku {
         this.tahunTerbit = tahunTerbit;
     }
 
+    // Getter
     public String getJudul() {
         return judul;
     }
@@ -20,6 +20,15 @@ public class Buku {
 
     public int getTahunTerbit() {
         return tahunTerbit;
+    }
+
+    // Setter
+    public void setJudul(String judul) {
+        this.judul = judul;
+    }
+
+    public void setPengarang(String pengarang) {
+        this.pengarang = pengarang;
     }
 
     public void tampilkanData() {
