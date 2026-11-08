@@ -3,11 +3,19 @@ public class Pegawai {
     protected String nip;
     protected double gajiPokok;
 
-    public Pegawai(String nama, String nip, double gajiPokok){
+    public Pegawai(String nama, String nip, double gajiPokok) {
         System.out.println("1. Constructor Pegawai dijalankan");
+
         this.nama = nama;
         this.nip = nip;
-        this.gajiPokok = gajiPokok;
+
+        // Validasi gaji pokok
+        if (gajiPokok < 0) {
+            System.out.println("Peringatan: Gaji pokok tidak boleh negatif!");
+            this.gajiPokok = 0;
+        } else {
+            this.gajiPokok = gajiPokok;
+        }
     }
 
     public void tampilkanData() {
