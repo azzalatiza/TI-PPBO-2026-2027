@@ -1,13 +1,11 @@
 public class KebunBinatangDemo {
     public static void main(String[] args) {
-        Hewan[] daftarHewan = {
-                new Kucing("Milo"),
-                new Anjing("Rex"),
-                new Kucing("Oyen")
-        };
+        Kucing k = new Kucing("Milo");
+        Anjing a = new Anjing("Rex");
+        Bebek b = new Bebek("Donald");
 
-        for (Hewan h : daftarHewan) {
-            h.bersuara(); // versi method sesuai object aslinya
-        }
+        k.bersuara();
+        a.bersuara();
+        b.bersuara();
     }
 }
